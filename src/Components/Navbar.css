@@ -1,0 +1,5 @@
+.navbar-bg{
+    background-color:var(--bgcolor);
+    z-index:99;;
+    position:relative;
+  }

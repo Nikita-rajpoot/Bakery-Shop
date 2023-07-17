@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav-item a{
+  text-decoration: none;
+  color:blueviolet;
+  transition: all 0.4s;
+}
+.main{
+  background:url(./images/Home3.jpg)no-repeat;
+  background-size: cover;
+  height: 200vh;
+  width: 100%;
+}
+main h3{
+ text-decoration:blueviolet;
+}
+button{
+  height: 50px;
+  width: 28%;
+  outline: none;
+  background-color: transparent;
+  color:rgb(20, 219, 20);
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+.button:hover{
+  background-color: rgb(20, 219, 20);
+  border: none;
+  color:blue;
+}
+.cake h2{
+  font-size: 3rem;
+  font-weight: bold;
+}
+.cake p{
+  font-size: 18px;
+  color: grey;
+}
+.cake .card{
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+.cake .card-body{
+  border: 1px;
+}
+.head1{
+  font-weight: 400;
+  margin: 0;
+}
+.per1{
+  color: grey;
+}
+.btnc{
+  height: 50px;
+  width: 50%;
+  outline: none;
+  border: none;
+  color: white;
+  background-color:green;
+  border-radius: 50px;
+  margin: 0 auto;
+  display: block;
+  transition: all 0.4s;
+}
+.btnc:hover{
+  outline: none;
+  border: 1px solid rgb(20, 219, 20);
+  color: rgb(20, 219, 20);
+  background: transparent;
+  border-radius: 50px;
+}
+.head1{
+  font-weight: 400;
+  margin: 0;
+}
+.per1{
+  color: grey;
+}
+.btnd{
+  height: 50px;
+  width: 50%;
+  outline: none;
+  border: none;
+  color: white;
+  background-color:green;
+  border-radius: 50px;
+  margin: 0 auto;
+  display: block;
+  transition: all 0.4s;
+}
+.btnd:hover{
+  outline: none;
+  border: 1px solid rgb(20, 219, 20);
+  color: rgb(20, 219, 20);
+  background: transparent;
+  border-radius: 50px;
+}
+.contact{
+  background: white;
+}
+.contact h5{
+  font-weight: bold;
+  color: darkmagenta;
+  font-style:inherit;
+}
+.search{
+  height: 45px;
+  outline:none;
+  border:2px solid black;
+  background-color: transparent;
+  border-radius: 20px 0px 0px 20px;
+  border-right: none;
+}
+.btn1{
+  height:45px;
+  outline: none;
+  border: none;
+  background-color:rgb(20, 219, 20);
+  color: blue;
+  border-radius: 0px 20px 20px 0px;
+  transition: all 0.4s;
+}
+.btn1:hover{
+  background-color:rgb(20, 219, 20);
+}
+.bi-bag{
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+  padding-top: 5px;
+  transition: all 0.4s;
+}
+.bi-bag:hover{
+  color: blue;
+}
