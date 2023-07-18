@@ -125,13 +125,6 @@ function Cake() {
         </div>
       </section>
     </div>
-  );
-       
-         
-            
-            
-          
-         
-          
+  );          
 }
 export default Cake;
