@@ -3,58 +3,80 @@ import React from "react";
 function AboutUs() {
   return (
     <div>
-      <h5>About Us</h5>
-      <div className="line my-4"></div>
-      <p>
-        Establishments producing and selling flour-based food like cakes,
-        cookies, and pastries are what bakeries are all about. Several bakeries
-        offer services for festivities and occasions like birthdays, weddings,
-        and other events.
-      </p>
-      <div className="grid-container">
-          <div className="grid-item">
-            <img
-              src="/images/nik2.jpeg"
-              class="d-block w-100"
-              alt="sunglasses"
-              height="300px"
-              width="80px"
-              border="1"
-            />
-            <p>We bake with cake</p>
+    <div className="about bg-light">
+      <div className="container ">
+        <section>
+          <h5 className="text-info">About Us</h5>
+          <div className="col-lg-6 m-auto">
+            <div className="line my-4"></div>
+              <p>
+                Establishments producing and selling flour-based food like cakes,
+                cookies, and pastries are what bakeries are all about. Several bakeries
+                offer services for festivities and occasions like birthdays, weddings,
+                and other events.
+            </p>
+        </div>
+      </section>    
+      <section>
+        <div className="row py-3">
+          <div className="col-lg-3">
+            <div className="card p-2">
+              <div className="card-body">
+              <img
+                src="/images/nik2.jpeg"
+                className="img-fluid"
+                alt="Cake"
+                width="400px"
+              />
+              <p>We bake with cake</p>
+            </div>
           </div>
-          <div className="grid-item">
+        </div>
+        <div className="col-lg-3">
+          <div className="card">
+            <div className="card-body">
             <img
-              src="/images/nik5.jpeg"
-              class="d-block w-100"
-              height="300px"
-              width="100%"
-              border="1"
+              src="/images/nik3.jpeg"
+              className="img-fluid"
+              alt="Cake"
+              width="400px"
             />
             <p>We are passionate</p>
           </div>
-          <div className="grid-item">
+         </div>
+        </div>
+        <div className="col-lg-3">
+          <div className="card">
+            <div className="card-body">
             <img
               src="/images/nik4.jpeg"
-              class="d-block w-100"
-              height="300px"
-              width="100%"
-              border="1"
+              className="img-fluid pb-3"
+              alt="Cake"
+              width="400px"
             />
             <p>We enjoy every step</p>
           </div>
-          <div className="grid-item">
+        </div>
+      </div>
+      <div className="col-lg-3">
+        <div className="card">
+            <div className="card-body">
             <img
-              src="/images/nik3.jpeg"
-              class="d-block w-100"
-              height="300px"
-              width="100%"
-              border="1"
+              src="/images/nik5.jpeg"
+              className="img-fluid pb-3"
+              alt="Cake"
+              width="400px"
             />
             <p>We create</p>
           </div> 
         </div>
     </div>
+  </div>
+</section>
+</div>
+</div>
+</div>
+</div>
   );
 }
 export default AboutUs;
