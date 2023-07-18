@@ -50,11 +50,20 @@ function Payment() {
                 placeholder="CVV"
               />
             </div>
-            <div className="line my-4"></div>
-            <p>
-              As a self-employed freelancer or small business owner, knowing how
-              to send an invoice correctly is crucial
-            </p>
+            <section>
+              <div className="col-lg-6 m-auto">
+                <div className="line my-4"></div>
+                <p>
+                  As a self-employed freelancer or small business owner, knowing how
+                  to send an invoice correctly is crucial
+                </p>
+                <span>
+                  <a className="me-2">
+                    <i class="bi bi-exclamation-circle-fill text-danger "></i>
+                  </a>
+                </span>
+              </div>
+            </section>
             <button type="submit"onClick="handlePayment" ClassName="btnp btn-outline-primary">
               Pay
             </button>
