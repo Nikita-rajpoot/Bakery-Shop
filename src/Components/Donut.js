@@ -3,7 +3,7 @@ import React from "react";
 function Donut() {
   return (
     <div>
-                <section className="cake bg-light">
+      <section className="cake bg-light">
         <div className="container ">
           <div className="row py-5 text-center">
             <h2>Donut</h2>
