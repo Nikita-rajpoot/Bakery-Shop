@@ -32,7 +32,7 @@ function Cake() {
                   <p className="per1">Black Forest flavored cake 
                   Chocolate Dropping and Topping With Cherry Round Shape</p>
                   <h5 className="head1">Rs. 600</h5>
-                  <button className="btnc mt-4">Add to Cart</button>
+                  <button className="btnc mt-4">Order</button>
                 </div>
               </div>
             </div>
@@ -48,7 +48,7 @@ function Cake() {
                   <h5 className="head1">Heavenly Rose Cake</h5>
                   <p className="per1">Cream Round Shape Whipped cream Birthdays Anniversary </p>
                   <h5 className="head1">Rs. 799</h5>
-                  <button className="btnc mt-4">Add to Cart</button>
+                  <button className="btnc mt-4">Order</button>
                 </div>
               </div>
             </div>
@@ -65,7 +65,7 @@ function Cake() {
                   <p className="per1">This delicious cake consists of: Half KG Vanilla cake White rose on top
                    Vanilla flavor Whipped cream Suitable for</p>
                   <h5 className="head1">Rs. 750</h5>
-                  <button className="btnc mt-4">Add to Cart</button>
+                  <button className="btnc mt-4">Order</button>
                 </div>
               </div>
             </div>
@@ -85,7 +85,7 @@ function Cake() {
                   <p className="per1">Type of Sponge: Chocolate 
                   Toppings: Cream, Chocolate flakes & Coffee dust Garnish </p>
                   <h5 className="head1">Rs. 550</h5>
-                  <button className="btnc mt-4">Add to Cart</button>
+                  <button className="btnc mt-4">Order</button>
                 </div>
               </div>
             </div>
@@ -101,7 +101,7 @@ function Cake() {
                   <h5 className="head1">Toothsome Chocolate Cake</h5>
                   <p className="per1">Type of Sponge: Chocolate</p>
                   <h5 className="head1">Rs.599</h5>
-                  <button className="btnc mt-4">Add to Cart</button>
+                  <button className="btnc mt-4">Order</button>
                 </div>
               </div>
             </div>
@@ -117,7 +117,7 @@ function Cake() {
                   <h5 className="head1">Creme Rose Cake</h5>
                   <p className="per1">Type of Cream: Vanilla </p>
                   <h5 className="head1">Rs. 600</h5>
-                  <button className="btnc mt-4">Add to Cart</button>
+                  <button className="btnc mt-4">Order</button>
                 </div>
               </div>
             </div>
