@@ -39,6 +39,11 @@ function Navbar() {
                   Call Now
                 </a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link active" href="/login">
+                  Login
+                </a>
+              </li>
             </ul>
           </div>
           <form className="d-flex">
