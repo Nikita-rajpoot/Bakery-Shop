@@ -137,3 +137,45 @@ button{
 .bi-bag:hover{
   color: blue;
 }
+.bi-exclamation-circle-fill{
+  font-size: 25px;
+}
+.bi-exclamation-circle-fill:hover{
+  color:red;
+}
+.bi-telegram{
+  font-size: 20px;
+}
+.bi-telegram:hover{
+  color:blue;
+}
+.bi-facebook{
+  font-size: 20px;
+}
+.bi-facebook:hover{
+  color:blue;
+}
+.bi-google{
+  font-size: 20px;
+}
+.bi-google:hover{
+  color:blue;
+}
+.bi-instagram{
+  font-size: 20px;
+}
+.bi-instagram:hover{
+  color:blue;
+}
+.bi-messenger{
+  font-size: 20px;
+}
+.bi-messenger:hover{
+  color:blue;
+}
+.footer{
+  background-color:brown;
+}
+.carousel-inner{
+  height:100%;
+}
