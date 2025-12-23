@@ -1,0 +1,295 @@
+/* OrderConfirmation.css */
+.order-confirmation {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirmation-container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 3rem;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.confirmation-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  background-color: #e8f5e9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirmation-icon svg {
+  width: 40px;
+  height: 40px;
+  color: #4caf50;
+}
+
+h1 {
+  color: #5c3d2e;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.order-number {
+  color: #666;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.confirmation-message {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.order-details {
+  background: #f9f9f9;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  color: #555;
+}
+
+.detail-row:last-child {
+  margin-bottom: 0;
+}
+
+.detail-row span:last-child {
+  font-weight: 500;
+  color: #333;
+}
+
+.shipping-address {
+  background: #f9f9f9;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.shipping-address h3 {
+  color: #5c3d2e;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.shipping-address p {
+  margin: 0.25rem 0;
+  color: #555;
+}
+
+.order-items-summary {
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.order-items-summary h3 {
+  color: #5c3d2e;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #eee;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.item-image {
+  position: relative;
+  margin-right: 1.5rem;
+}
+
+.item-image img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.quantity {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #d4a76a;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.item-details h4 {
+  margin: 0 0 0.25rem 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+.item-details p {
+  margin: 0;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.item-total {
+  font-weight: 600;
+  color: #5c3d2e;
+  min-width: 80px;
+  text-align: right;
+}
+
+.order-totals {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  color: #555;
+}
+
+.grand-total {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #5c3d2e;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.confirmation-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.btn {
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #d4a76a;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #b88c51;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: none;
+  border: 1px solid #d4a76a;
+  color: #d4a76a;
+}
+
+.btn-outline:hover {
+  background-color: #f9f5f0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .confirmation-container {
+    padding: 2rem 1.5rem;
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  .order-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .item-image {
+    margin-bottom: 1rem;
+  }
+  
+  .item-total {
+    margin-top: 0.5rem;
+    text-align: left;
+    width: 100%;
+    padding-top: 0.5rem;
+    border-top: 1px dashed #eee;
+  }
+  
+  .confirmation-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .confirmation-container {
+    padding: 1.5rem 1rem;
+  }
+  
+  .confirmation-message {
+    font-size: 0.95rem;
+  }
+  
+  .order-details,
+  .shipping-address {
+    padding: 1rem;
+  }
+  
+  .detail-row {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .detail-row span:last-child {
+    font-weight: 500;
+  }
+}

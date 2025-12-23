@@ -1,181 +1,281 @@
-* {
+/* Google Fonts Import */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&family=Dancing+Script:wght@400;500;600;700&display=swap");
+
+/* Base Styles */
+:root {
+  --primary-color: #d4a76a;
+  --primary-dark: #c1914f;
+  --secondary-color: #5c3d2e;
+  --light-bg: #fff9f0;
+  --text-color: #333;
+  --light-text: #777;
+  --white: #ffffff;
+  --transition: all 0.3s ease;
+  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset and Base Styles */
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.nav-item a{
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+a {
   text-decoration: none;
-  color:blueviolet;
-  transition: all 0.4s;
+  color: inherit;
+  transition: var(--transition);
 }
-.main{
-  background:url(./images/Home3.jpg)no-repeat;
-  background-size: cover;
-  height: 200vh;
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: var(--transition);
+}
+
+/* Utility Classes */
+.container {
   width: 100%;
-}
-main h3{
- text-decoration:blueviolet;
-}
-button{
-  height: 50px;
-  width: 28%;
-  outline: none;
-  background-color: transparent;
-  color:rgb(20, 219, 20);
-  border-radius: 50px;
-  transition: all 0.4s;
-}
-.button:hover{
-  background-color: rgb(20, 219, 20);
-  border: none;
-  color:blue;
-}
-.cake h2{
-  font-size: 3rem;
-  font-weight: bold;
-}
-.cake p{
-  font-size: 18px;
-  color: grey;
-}
-.cake .card{
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-.cake .card-body{
-  border: 1px;
-}
-.head1{
-  font-weight: 400;
-  margin: 0;
-}
-.per1{
-  color: grey;
-}
-.btnc{
-  height: 50px;
-  width: 50%;
-  outline: none;
-  border: none;
-  color: white;
-  background-color:green;
-  border-radius: 50px;
+  max-width: 1200px;
   margin: 0 auto;
-  display: block;
-  transition: all 0.4s;
+  padding: 0 1.5rem;
 }
-.btnc:hover{
-  outline: none;
-  border: 1px solid rgb(20, 219, 20);
-  color: rgb(20, 219, 20);
-  background: transparent;
-  border-radius: 50px;
+
+.section {
+  padding: 6rem 0;
 }
-.head1{
-  font-weight: 400;
-  margin: 0;
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.per1{
-  color: grey;
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: var(--primary-color);
 }
-.btnd{
-  height: 50px;
-  width: 50%;
-  outline: none;
-  border: none;
-  color: white;
-  background-color:green;
-  border-radius: 50px;
-  margin: 0 auto;
-  display: block;
-  transition: all 0.4s;
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: var(--transition);
+  border: 2px solid transparent;
+  text-align: center;
 }
-.btnd:hover{
-  outline: none;
-  border: 1px solid rgb(20, 219, 20);
-  color: rgb(20, 219, 20);
-  background: transparent;
-  border-radius: 50px;
+
+.btn:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-.contact{
-  background: white;
-}
-.contact h5{
-  font-weight: bold;
-  color: darkmagenta;
-  font-style:inherit;
-}
-.search{
-  height: 45px;
-  outline:none;
-  border:2px solid black;
+
+.btn-outline {
   background-color: transparent;
-  border-radius: 20px 0px 0px 20px;
-  border-right: none;
+  border: 2px solid var(--white);
+  color: var(--white);
 }
-.btn1{
-  height:45px;
-  outline: none;
-  border: none;
-  background-color:rgb(20, 219, 20);
-  color: blue;
-  border-radius: 0px 20px 20px 0px;
-  transition: all 0.4s;
+
+.btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
-.btn1:hover{
-  background-color:rgb(20, 219, 20);
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-.bi-bag{
-  font-size: 30px;
-  color: black;
-  cursor: pointer;
-  padding-top: 5px;
-  transition: all 0.4s;
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
-.bi-bag:hover{
-  color: blue;
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
-.bi-exclamation-circle-fill{
-  font-size: 25px;
+
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
 }
-.bi-exclamation-circle-fill:hover{
-  color:red;
+
+.slide-in-left {
+  animation: slideInLeft 0.8s ease-out forwards;
 }
-.bi-telegram{
-  font-size: 20px;
+
+.slide-in-right {
+  animation: slideInRight 0.8s ease-out forwards;
 }
-.bi-telegram:hover{
-  color:blue;
+
+/* Responsive Typography */
+@media (max-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
 }
-.bi-facebook{
-  font-size: 20px;
+
+@media (max-width: 992px) {
+  html {
+    font-size: 14.5px;
+  }
+  .section {
+    padding: 5rem 0;
+  }
 }
-.bi-facebook:hover{
-  color:blue;
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .section {
+    padding: 4rem 0;
+  }
+  .section-title {
+    font-size: 2.2rem;
+  }
 }
-.bi-google{
-  font-size: 20px;
+
+@media (max-width: 576px) {
+  html {
+    font-size: 13px;
+  }
+  .section {
+    padding: 3.5rem 0;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .btn {
+    padding: 0.7rem 1.5rem;
+  }
 }
-.bi-google:hover{
-  color:blue;
+
+/* Print Styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: none;
+    color: #000;
+    font-size: 12pt;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .btn,
+  button {
+    display: none;
+  }
 }
-.bi-instagram{
-  font-size: 20px;
-}
-.bi-instagram:hover{
-  color:blue;
-}
-.bi-messenger{
-  font-size: 20px;
-}
-.bi-messenger:hover{
-  color:blue;
-}
-.footer{
-  background-color:brown;
-}
-.carousel-inner{
-  height:100%;
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.2rem;
+  color: #5c3d2e;
+  background-color: #fff9f0;
 }
